@@ -1,0 +1,93 @@
+/* Style untuk body dan elemen dasar */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Kontainer utama */
+.container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style untuk setiap memory */
+.memory {
+    margin: 40px auto;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.memory:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Style gambar dalam memory */
+.memory img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk teks deskripsi memory */
+.memory p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Footer styling */
+footer {
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 0.9em;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .memory {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .memory p {
+        font-size: 1.1em;
+    }
+}
